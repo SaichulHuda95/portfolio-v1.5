@@ -11,6 +11,13 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #b5b8bf; /* Deep Navy, lebih premium dari hitam */
+  background-image:
+    linear-gradient(rgba(30, 7, 7, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+  color: #f8f9fa; /* Teks default jadi Putih Terang */
 }
 
 a {
@@ -297,7 +304,12 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(165, 164, 164, 0.8);
+  /* Gradasi transparan ke solid agar teks fokus */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1246,19 +1258,32 @@ section {
 }
 
 .card-glass {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); /* support Safari */
-  background: rgba(255, 255, 255, 0.15); /* putih transparan */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Sedikit lebih tebal agar teks terbaca */
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  color: #5e5959;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Border lebih terang sebagai highlight */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* Shadow lebih menyebar */
+  color: #2c3e50; /* Teks lebih gelap agar kontras di atas putih transparan */
+  transition: all 0.3s ease;
+}
+
+.card-glass:hover {
+  transform: translateY(-5px);
+  /* background: rgba(255, 255, 255, 0.85); */
+  border: 1px solid #0563bb;
+  transition: all 0.3s ease;
 }
 
 .glass {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); /* support Safari */
-  background: rgba(255, 255, 255, 0.15); /* putih transparan */
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #2c3e50;
 }
 
 /* Tambahkan ini untuk tetap mempertahankan efek saat fokus */
