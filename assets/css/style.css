@@ -11,9 +11,9 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #b5b8bf; /* Deep Navy, lebih premium dari hitam */
+  background-color: #0a1120; /* Deep Navy, lebih premium dari hitam */
   background-image:
-    linear-gradient(rgba(30, 7, 7, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
   background-attachment: fixed;
@@ -181,7 +181,7 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: #a4a9ae;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -307,8 +307,8 @@ h6 {
   /* Gradasi transparan ke solid agar teks fokus */
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0.4) 100%
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(68, 67, 67, 0.4) 100%
   );
   position: absolute;
   bottom: 0;
@@ -322,11 +322,11 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #bfc3c6;
 }
 
 #hero p {
-  color: #45505b;
+  color: #bfc3c6;
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
@@ -344,7 +344,7 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #a4a9ae;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -391,7 +391,11 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #a4a9ae;
+}
+
+.lightgrey {
+  color: #a4a9ae;
 }
 
 .section-title h2::before {
@@ -514,7 +518,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #45505b;
+  color: #a4a9ae;
 }
 
 .skills .progress .skill .val {
@@ -544,7 +548,7 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #a4a9ae;
 }
 
 .resume .resume-item {
@@ -577,7 +581,7 @@ section {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  color: #5e5959;
+  color: #a4a9ae;
 }
 
 .resume .resume-item ul {
@@ -635,7 +639,7 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: #a4a9ae;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -1066,14 +1070,14 @@ section {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  color: #5e5959;
+  color: #a4a9ae;
   padding: 20px;
 }
 
 .contact .info i {
   font-size: 20px;
   /* color: #0563bb; */
-  color: #5e5959;
+  color: #a4a9ae;
   float: left;
   width: 44px;
   height: 44px;
@@ -1095,7 +1099,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #a4a9ae;
 }
 
 .contact .info p {
@@ -1198,7 +1202,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   /* background: #f7f8f9; */
-  color: #45505b;
+  color: #a4a9ae;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1258,24 +1262,23 @@ section {
 }
 
 .card-glass {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
   background: rgba(
-    255,
-    255,
-    255,
+    104,
+    97,
+    97,
     0.4
   ); /* Sedikit lebih tebal agar teks terbaca */
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.5); /* Border lebih terang sebagai highlight */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* Shadow lebih menyebar */
-  color: #2c3e50; /* Teks lebih gelap agar kontras di atas putih transparan */
+  color: #a4a9ae; /* Teks lebih gelap agar kontras di atas putih transparan */
   transition: all 0.3s ease;
 }
 
 .card-glass:hover {
   transform: translateY(-5px);
-  /* background: rgba(255, 255, 255, 0.85); */
   border: 1px solid #0563bb;
   transition: all 0.3s ease;
 }
