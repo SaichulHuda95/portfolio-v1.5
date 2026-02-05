@@ -1296,3 +1296,27 @@ section {
   background: rgba(255, 255, 255, 0.15); /* putih transparan */
   color: #5e5959;
 }
+
+.whatsapp-float {
+  position: fixed;
+  right: 15px;
+  bottom: 70px; /* Di atas tombol back-to-top */
+  z-index: 996;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+  color: #25d366; /* Warna khas WhatsApp */
+  font-size: 24px;
+}
+
+.whatsapp-float:hover {
+  background: #25d366 !important;
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+/* Pastikan tombol panah tetap di tempatnya */
+.back-to-top {
+  bottom: 15px; /* Tetap di paling bawah */
+}
