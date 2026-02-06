@@ -1277,6 +1277,17 @@ section {
   transition: all 0.3s ease;
 }
 
+.card-glass:hover .bx {
+  transform: scale(1.1);
+  transition: 0.3s;
+  text-shadow: 0 0 10px rgba(5, 99, 187, 0.5);
+}
+
+/* Pastikan teks di dalam kartu tetap kebaca dengan warna background gelapmu */
+.card-glass p {
+  color: #bfc3c6; /* Mengikuti warna teks hero p agar konsisten */
+}
+
 .card-glass:hover {
   transform: translateY(-5px);
   border: 1px solid #0563bb;
