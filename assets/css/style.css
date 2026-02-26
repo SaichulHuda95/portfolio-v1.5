@@ -1274,12 +1274,9 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.5); /* Border lebih terang sebagai highlight */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* Shadow lebih menyebar */
   color: #a4a9ae; /* Teks lebih gelap agar kontras di atas putih transparan */
-  transition: all 0.3s ease;
 }
 
 .card-glass:hover .bx {
-  transform: scale(1.1);
-  transition: 0.3s;
   text-shadow: 0 0 10px rgba(5, 99, 187, 0.5);
 }
 
@@ -1289,9 +1286,7 @@ section {
 }
 
 .card-glass:hover {
-  transform: translateY(-5px);
   border: 1px solid #0563bb;
-  transition: all 0.3s ease;
 }
 
 .glass {
