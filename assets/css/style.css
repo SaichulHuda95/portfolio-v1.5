@@ -1364,3 +1364,14 @@ section {
   border-radius: 40px;
   opacity: 0.8;
 }
+
+.badge-tech {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 50px;
+  background: rgba(5, 99, 187, 0.2);
+  color: #0d6efd;
+  border: 1px solid rgba(5, 99, 187, 0.3);
+  margin-right: 5px;
+  display: inline-block;
+}
