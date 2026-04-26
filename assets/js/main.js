@@ -35,13 +35,6 @@
   };
 
   /**
-   * Easy on scroll event listener
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener("scroll", listener);
-  };
-
-  /**
    * Navbar links active state on scroll
    */
   let navbarlinks = select("#navbar .scrollto", true);
@@ -62,7 +55,7 @@
     });
   };
   window.addEventListener("load", navbarlinksActive);
-  onscroll(document, navbarlinksActive);
+  document.addEventListener("scroll", navbarlinksActive);
 
   /**
    * Scrolls to an element with header offset
@@ -88,17 +81,8 @@
       }
     };
     window.addEventListener("load", toggleBacktotop);
-    onscroll(document, toggleBacktotop);
+    document.addEventListener("scroll", toggleBacktotop);
   }
-
-  /**
-   * Mobile nav toggle
-   */
-  on("click", ".mobile-nav-toggle", function (e) {
-    select("body").classList.toggle("mobile-nav-active");
-    this.classList.toggle("bi-list");
-    this.classList.toggle("bi-x");
-  });
 
   /**
    * Scrool with ofset on links with a class name .scrollto
@@ -109,14 +93,6 @@
     function (e) {
       if (select(this.hash)) {
         e.preventDefault();
-
-        let body = select("body");
-        if (body.classList.contains("mobile-nav-active")) {
-          body.classList.remove("mobile-nav-active");
-          let navbarToggle = select(".mobile-nav-toggle");
-          navbarToggle.classList.toggle("bi-list");
-          navbarToggle.classList.toggle("bi-x");
-        }
         scrollto(this.hash);
       }
     },

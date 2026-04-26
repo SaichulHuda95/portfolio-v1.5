@@ -58,7 +58,6 @@ h6 {
 
 .back-to-top i {
   font-size: 28px;
-  /* color: #fff; */
   line-height: 0;
 }
 
@@ -149,7 +148,6 @@ h6 {
     -webkit-backdrop-filter: blur(20px);
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
     padding: 0;
     overflow: visible;
     flex-direction: row !important;
@@ -227,7 +225,6 @@ h6 {
     background: #0563bb;
     border-color: #0563bb;
     color: #fff;
-    box-shadow: 0 5px 15px rgba(5, 99, 187, 0.4);
   }
 
   .nav-menu a:hover span,
@@ -283,26 +280,6 @@ h6 {
     color: #0563bb;
     font-weight: 600;
   }
-}
-
-/**
-* Mobile Navigation 
-*/
-.mobile-nav-toggle {
-  display: none !important;
-}
-
-.mobile-nav-active {
-  overflow: hidden;
-}
-
-.mobile-nav-active #header {
-  left: 0;
-}
-
-.mobile-nav-active .mobile-nav-toggle {
-  color: #fff;
-  background-color: #0563bb;
 }
 
 /*--------------------------------------------------------------
@@ -607,7 +584,6 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  /* background: #f7f8f9; */
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -657,7 +633,6 @@ section {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  /* background: #fff; */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px); /* support Safari */
   background: rgba(255, 255, 255, 0.15); /* putih transparan */
@@ -1269,7 +1244,7 @@ section {
 }
 
 #footer p {
-  font-size: 15;
+  font-size: 15px;
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
