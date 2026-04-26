@@ -762,6 +762,20 @@ section {
   transition: 0.3s;
 }
 
+/* Threads-style Slider Adjustments */
+.portfolio-details-slider {
+  overflow: visible !important; /* Agar kartu peeking dan shadow tidak terpotong */
+  padding: 20px 0;
+}
+
+.portfolio-details-slider .swiper-slide {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-details-slider .swiper-slide-active {
+  transform: scale(1.02); /* Sedikit menonjolkan kartu yang sedang aktif */
+}
+
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   color: #148af9;
 }

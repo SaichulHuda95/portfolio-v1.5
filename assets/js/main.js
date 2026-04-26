@@ -215,25 +215,18 @@
    * Portfolio details slider
    */
   new Swiper(".portfolio-details-slider", {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
+    speed: 600,
+    loop: false, // Threads style biasanya tidak looping tak terbatas
+    grabCursor: true,
+    centeredSlides: false,
     breakpoints: {
       320: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        slidesPerView: 1.2, // Kartu kedua akan terlihat sedikit di kanan
+        spaceBetween: 10,
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        slidesPerView: 2.2,
+        spaceBetween: 15,
       },
       1200: {
         slidesPerView: 3,
@@ -247,7 +240,7 @@
    */
   window.addEventListener("load", () => {
     AOS.init({
-      duration: 1000,
+      duration: 400,
       easing: "ease-in-out",
       once: true,
       mirror: false,
