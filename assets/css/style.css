@@ -260,7 +260,7 @@ h6 {
     border: none;
     flex-direction: column;
     margin: 0;
-    padding: 5px;
+    padding: 10px;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
