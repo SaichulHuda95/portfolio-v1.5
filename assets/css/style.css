@@ -138,15 +138,15 @@ h6 {
 @media (max-width: 991px) {
   #header {
     top: auto;
-    bottom: 25px;
-    left: 20px !important;
-    right: 20px;
+    bottom: 16px; /* fixed bottom-4 equivalent */
+    left: 15px !important;
+    right: 15px;
     width: auto;
     height: 75px;
     background: rgba(10, 17, 32, 0.8) !important;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-radius: 25px;
+    border-radius: 40px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 0;
     overflow: visible;
@@ -188,7 +188,7 @@ h6 {
   align-items: center;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   font-size: 15px;
-  border-radius: 15px;
+  border-radius: 24px;
   height: 50px;
   width: 50px;
   overflow: hidden;
@@ -1206,7 +1206,7 @@ section {
   padding: 10px 35px;
   color: #fff;
   transition: 0.4s;
-  border-radius: 12px;
+  border-radius: 24px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -1296,7 +1296,7 @@ section {
     97,
     0.4
   ); /* Sedikit lebih tebal agar teks terbaca */
-  border-radius: 20px;
+  border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.5); /* Border lebih terang sebagai highlight */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15); /* Shadow lebih menyebar */
   color: #a4a9ae; /* Teks lebih gelap agar kontras di atas putih transparan */
@@ -1360,6 +1360,9 @@ section {
   }
   .whatsapp-float {
     bottom: 170px !important;
+  }
+  #footer {
+    padding-bottom: 110px; /* Memberi ruang agar tidak tertutup nav-menu mobile */
   }
 }
 
